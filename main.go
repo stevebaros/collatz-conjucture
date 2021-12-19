@@ -34,14 +34,14 @@ func collatz(n float64) {
 	switch {
 
 	case n == 1:
-		fmt.Println("Reached the bottom!")
+		fmt.Println("Reached at the bottom!")
 	case even(n):
 		n = n / 2
-		//fmt.Println(n)
+		fmt.Println("**")
 		collatz(n)
 	case odd(n):
 		n = n*3 + 1
-		//fmt.Println(n)
+		fmt.Println("***")
 		collatz(n)
 	}
 }
